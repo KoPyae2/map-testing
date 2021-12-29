@@ -10,7 +10,13 @@ const kachin = document.getElementById("kachin"),
       yangon = document.getElementById("yangon"),
       mon = document.getElementById("mon");
 
+
 const closebtn = document.querySelector(".cancleicons");
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+});
 
 closebtn.addEventListener("click", ()=>{
     changedisplay(modalel);
@@ -19,6 +25,7 @@ closebtn.addEventListener("click", ()=>{
 
 states.forEach( state => {
     // console.log(state);
+
     state.addEventListener("click", (e)=> {
         const place = state.getAttribute("name");
 
@@ -77,5 +84,8 @@ function changealldisplay(){
     changedisplay(shan);
     changedisplay(mon);
 }
+
+
+
 
 // END CONTACT SECTION
