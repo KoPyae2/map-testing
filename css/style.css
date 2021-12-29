@@ -1,0 +1,131 @@
+
+:root{
+    --firstclr:#201f41;
+    --secondclr:#422d53;
+    --thirdclr:#912e54;
+    --fourthclr:#d1788f;
+    --fifthclr:#dd7c86;
+}
+svg path:hover{
+    fill:rgb(83, 35, 35);
+}
+
+.contact-imgs{
+    width: 32px;
+
+    position: absolute;
+}
+
+#MMR3296:hover{
+    fill: var(--fifthclr);
+}
+
+#MMR3302:hover{
+    fill: var(--thirdclr);
+}
+
+#MMR3277:hover{
+    fill: var(--firstclr);
+}
+
+#MMR3267:hover{
+    fill: var(--secondclr);
+}
+
+#MMR3270:hover{
+    fill: var(--fourthclr);
+}
+
+#MMR3269:hover{
+    fill: var(--thirdclr);
+}
+
+/* path[name="Kayah"]{
+    fill:yellow;
+} */
+
+/*Start Map Modal Section */
+.modals{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.imgs{
+    border-radius:5px;
+    filter: grayscale(100%);
+    transition: all 0.4s 0.2s;
+}
+
+.imgs:hover{
+    filter: grayscale(0%);
+}
+
+.img-cons{
+    position: relative;
+    overflow: hidden;
+}
+
+.img-texts{
+    font-size: 25px;
+    font-weight: 700;
+    padding:3px 13px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+
+    position: absolute;
+    bottom:-100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    transition: all 0.4s;
+
+    white-space: nowrap;
+}
+
+.img-cons:hover .img-texts{
+    bottom:10px;
+}
+
+ul.memberlists{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    overflow-y: scroll;
+}
+
+a.member-infos{
+    text-decoration: none;
+    color:#201f41;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.cancleicons{
+    position: absolute;
+    top:20px;
+    right:50px;
+    padding: 5px 11px;
+
+    z-index: 5;
+}
+
+.model-insite{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Map Modal Section */
+
